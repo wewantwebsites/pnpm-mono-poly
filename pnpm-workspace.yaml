@@ -1,0 +1,5 @@
+packages: 
+  # launcable applications
+  - 'apps/*'
+  # shared utilities and components
+  - 'packages/*'
