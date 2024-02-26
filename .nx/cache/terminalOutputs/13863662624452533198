@@ -1,0 +1,23 @@
+
+> remix-app@ build /Users/casimerguzdzioliv/Code/mono-poly/apps/remix-app
+> remix vite:build
+
+[36mvite v5.1.4 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 81 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mbuild/client/[22m[32m.vite/manifest.json              [39m[1m[2m  1.18 kB[22m[1m[22m[2m │ gzip:  0.35 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36m_index-BTc6gEg6.js        [39m[1m[2m  0.92 kB[22m[1m[22m[2m │ gzip:  0.47 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mroot-B_va2Ysy.js          [39m[1m[2m  1.44 kB[22m[1m[22m[2m │ gzip:  0.84 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mjsx-runtime-BlSqMCxk.js   [39m[1m[2m  8.09 kB[22m[1m[22m[2m │ gzip:  3.04 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mentry.client-DxOYqYt_.js  [39m[1m[2m 14.18 kB[22m[1m[22m[2m │ gzip:  4.94 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mcomponents-Bjtzq-Kj.js    [39m[1m[2m212.63 kB[22m[1m[22m[2m │ gzip: 68.80 kB[22m
+[32m✓ built in 773ms[39m
+[36mvite v5.1.4 [32mbuilding SSR bundle for production...[36m[39m
+transforming...
+[32m✓[39m 6 modules transformed.
+rendering chunks...
+[2mbuild/server/[22m[32m.vite/manifest.json  [39m[1m[2m0.13 kB[22m[1m[22m
+[2mbuild/server/[22m[36mindex.js             [39m[1m[2m7.54 kB[22m[1m[22m
+[32m✓ built in 22ms[39m
