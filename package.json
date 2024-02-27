@@ -4,12 +4,32 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nx build",
+    "lint": "nx lint",
+    "test": "nx exec -- node ./run-tests.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nx": "^18.0.5"
+  },
+  "dependencies": {
+    "@nx/eslint": "^18.0.5"
+  },
+  "nx": {
+    "includedScripts": [
+      "test"
+    ],
+    "targets": {
+      "test": {
+        "cache": "true",
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "outputs": []
+      }
+    }
   }
 }

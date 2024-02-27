@@ -1,4 +1,12 @@
 {
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
@@ -13,6 +21,7 @@
   },
   "targetDefaults": {
     "build": {
+      "cache": true,
       "inputs": ["noMarkdown", "^noMarkdown", "noTests", "^noTests"],
       "dependsOn": ["^build"]
     },
@@ -20,7 +29,8 @@
       "dependsOn": ["^build"]
     },
     "test": {
-      "inputs": ["noMarkdown", "^noMarkdown"]
+      "inputs": ["noMarkdown", "^noMarkdown"],
+      "cache": true
     }
   }
 }

@@ -1,29 +1,18 @@
 {
   "run": {
-    "command": "nx run-many --target=build --all",
-    "startTime": "2024-02-26T20:52:43.336Z",
-    "endTime": "2024-02-26T20:52:43.373Z",
+    "command": "nx run-many -t build",
+    "startTime": "2024-02-27T02:23:01.879Z",
+    "endTime": "2024-02-27T02:23:03.995Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "react-app:build",
-      "target": "build",
-      "projectName": "react-app",
-      "hash": "6823540643090191888",
-      "startTime": "2024-02-26T20:52:43.344Z",
-      "endTime": "2024-02-26T20:52:43.365Z",
-      "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
       "taskId": "shared-utils:build",
       "target": "build",
       "projectName": "shared-utils",
-      "hash": "3136677831481496087",
-      "startTime": "2024-02-26T20:52:43.344Z",
-      "endTime": "2024-02-26T20:52:43.368Z",
+      "hash": "16703416220606529203",
+      "startTime": "2024-02-27T02:23:01.884Z",
+      "endTime": "2024-02-27T02:23:01.903Z",
       "params": "",
       "cacheStatus": "local-cache-hit",
       "status": 0
@@ -32,9 +21,9 @@
       "taskId": "remix-app:build",
       "target": "build",
       "projectName": "remix-app",
-      "hash": "4750603288243540135",
-      "startTime": "2024-02-26T20:52:43.344Z",
-      "endTime": "2024-02-26T20:52:43.370Z",
+      "hash": "5471654942625806004",
+      "startTime": "2024-02-27T02:23:01.906Z",
+      "endTime": "2024-02-27T02:23:01.910Z",
       "params": "",
       "cacheStatus": "local-cache-hit",
       "status": 0
@@ -43,22 +32,33 @@
       "taskId": "sk-app:build",
       "target": "build",
       "projectName": "sk-app",
-      "hash": "14474193088543307588",
-      "startTime": "2024-02-26T20:52:43.368Z",
-      "endTime": "2024-02-26T20:52:43.371Z",
+      "hash": "12006348863292065001",
+      "startTime": "2024-02-27T02:23:01.910Z",
+      "endTime": "2024-02-27T02:23:01.911Z",
       "params": "",
       "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "react-app:build",
+      "target": "build",
+      "projectName": "react-app",
+      "hash": "12091444887257475806",
+      "startTime": "2024-02-27T02:23:01.906Z",
+      "endTime": "2024-02-27T02:23:03.604Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
       "status": 0
     },
     {
       "taskId": "vue-app:build",
       "target": "build",
       "projectName": "vue-app",
-      "hash": "1855854610151726887",
-      "startTime": "2024-02-26T20:52:43.367Z",
-      "endTime": "2024-02-26T20:52:43.372Z",
+      "hash": "17598399553489558414",
+      "startTime": "2024-02-27T02:23:01.906Z",
+      "endTime": "2024-02-27T02:23:03.995Z",
       "params": "",
-      "cacheStatus": "local-cache-hit",
+      "cacheStatus": "cache-miss",
       "status": 0
     }
   ]

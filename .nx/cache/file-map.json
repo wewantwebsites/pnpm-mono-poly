@@ -2,292 +2,20 @@
   "version": "6.0",
   "nxVersion": "18.0.5",
   "deps": {
+    "@nx/eslint": "^18.0.5",
     "nx": "^18.0.5"
   },
   "pathMappings": {},
-  "nxJsonPlugins": [],
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
   "fileMap": {
     "projectFileMap": {
-      "vue-app": [
-        {
-          "file": "apps/vue-app/.gitignore",
-          "hash": "13046175384202504187"
-        },
-        {
-          "file": "apps/vue-app/.vscode/extensions.json",
-          "hash": "4987258316065159537"
-        },
-        {
-          "file": "apps/vue-app/README.md",
-          "hash": "4021204212156631199"
-        },
-        {
-          "file": "apps/vue-app/index.html",
-          "hash": "2041538145237984364"
-        },
-        {
-          "file": "apps/vue-app/package.json",
-          "hash": "6579563186792379249",
-          "deps": [
-            "shared-utils",
-            "npm:vue",
-            "npm:@vitejs/plugin-vue",
-            "npm:typescript",
-            "npm:vite",
-            "npm:vue-tsc"
-          ]
-        },
-        {
-          "file": "apps/vue-app/public/vite.svg",
-          "hash": "16046085400642193116"
-        },
-        {
-          "file": "apps/vue-app/src/App.vue",
-          "hash": "18217346160591149249"
-        },
-        {
-          "file": "apps/vue-app/src/assets/vue.svg",
-          "hash": "6215844894841429247"
-        },
-        {
-          "file": "apps/vue-app/src/components/HelloWorld.vue",
-          "hash": "13129731235419273556"
-        },
-        {
-          "file": "apps/vue-app/src/main.ts",
-          "hash": "16191179116649366684"
-        },
-        {
-          "file": "apps/vue-app/src/style.css",
-          "hash": "9062188384862178705"
-        },
-        {
-          "file": "apps/vue-app/src/vite-env.d.ts",
-          "hash": "12946363841406869089"
-        },
-        {
-          "file": "apps/vue-app/tsconfig.json",
-          "hash": "1924584178197274420"
-        },
-        {
-          "file": "apps/vue-app/tsconfig.node.json",
-          "hash": "4208030242441905014"
-        },
-        {
-          "file": "apps/vue-app/vite.config.ts",
-          "hash": "16362039650580913027"
-        }
-      ],
-      "shared-utils": [
-        {
-          "file": "packages/shared-utils/.gitignore",
-          "hash": "13046175384202504187"
-        },
-        {
-          "file": "packages/shared-utils/index.html",
-          "hash": "18035450226464705408"
-        },
-        {
-          "file": "packages/shared-utils/package.json",
-          "hash": "14558595006206986530",
-          "deps": [
-            "npm:typescript",
-            "npm:vite",
-            "npm:vite-plugin-dts"
-          ]
-        },
-        {
-          "file": "packages/shared-utils/public/vite.svg",
-          "hash": "16046085400642193116"
-        },
-        {
-          "file": "packages/shared-utils/src/main.ts",
-          "hash": "10559951445426176031"
-        },
-        {
-          "file": "packages/shared-utils/src/typescript.svg",
-          "hash": "8667544980518902788"
-        },
-        {
-          "file": "packages/shared-utils/src/vite-env.d.ts",
-          "hash": "12946363841406869089"
-        },
-        {
-          "file": "packages/shared-utils/tsconfig.json",
-          "hash": "15337872224458810919"
-        },
-        {
-          "file": "packages/shared-utils/vite.config.ts",
-          "hash": "14379223959308855068"
-        }
-      ],
-      "remix-app": [
-        {
-          "file": "apps/remix-app/.eslintrc.cjs",
-          "hash": "17337184654626309665"
-        },
-        {
-          "file": "apps/remix-app/.gitignore",
-          "hash": "2267986781002139465"
-        },
-        {
-          "file": "apps/remix-app/README.md",
-          "hash": "18062678541463716283"
-        },
-        {
-          "file": "apps/remix-app/app/root.tsx",
-          "hash": "10845095113979242482"
-        },
-        {
-          "file": "apps/remix-app/app/routes/_index.tsx",
-          "hash": "3166941058342787063"
-        },
-        {
-          "file": "apps/remix-app/package.json",
-          "hash": "7587392720877586422",
-          "deps": [
-            "npm:@remix-run/node",
-            "npm:@remix-run/react",
-            "npm:@remix-run/serve",
-            "npm:isbot",
-            "npm:react",
-            "npm:react-dom",
-            "shared-utils",
-            "npm:@remix-run/dev",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:eslint",
-            "npm:eslint-import-resolver-typescript",
-            "npm:eslint-plugin-import",
-            "npm:eslint-plugin-jsx-a11y",
-            "npm:eslint-plugin-react",
-            "npm:eslint-plugin-react-hooks",
-            "npm:typescript",
-            "npm:vite",
-            "npm:vite-tsconfig-paths"
-          ]
-        },
-        {
-          "file": "apps/remix-app/public/favicon.ico",
-          "hash": "3730367829618743876"
-        },
-        {
-          "file": "apps/remix-app/tsconfig.json",
-          "hash": "5672995418865964270"
-        },
-        {
-          "file": "apps/remix-app/vite.config.ts",
-          "hash": "6610264219224123987"
-        }
-      ],
-      "sk-app": [
-        {
-          "file": "apps/sk-app/.eslintignore",
-          "hash": "12866345277008372755"
-        },
-        {
-          "file": "apps/sk-app/.eslintrc.cjs",
-          "hash": "15647399974590712086"
-        },
-        {
-          "file": "apps/sk-app/.gitignore",
-          "hash": "9815671046980959070"
-        },
-        {
-          "file": "apps/sk-app/.npmrc",
-          "hash": "16306061729883149313"
-        },
-        {
-          "file": "apps/sk-app/.prettierignore",
-          "hash": "14944193782101443844"
-        },
-        {
-          "file": "apps/sk-app/.prettierrc",
-          "hash": "405103432484641903"
-        },
-        {
-          "file": "apps/sk-app/README.md",
-          "hash": "11542502170952645301"
-        },
-        {
-          "file": "apps/sk-app/package.json",
-          "hash": "7732911099589598075",
-          "deps": [
-            "shared-utils",
-            "npm:@playwright/test",
-            "npm:@sveltejs/adapter-auto",
-            "npm:@sveltejs/kit",
-            "npm:@sveltejs/vite-plugin-svelte",
-            "npm:@types/eslint",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser",
-            "npm:eslint",
-            "npm:eslint-config-prettier",
-            "npm:eslint-plugin-svelte",
-            "npm:prettier",
-            "npm:prettier-plugin-svelte",
-            "npm:svelte",
-            "npm:svelte-check",
-            "npm:tslib",
-            "npm:typescript",
-            "npm:vite",
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "apps/sk-app/playwright.config.ts",
-          "hash": "2563297502597556445"
-        },
-        {
-          "file": "apps/sk-app/src/app.d.ts",
-          "hash": "17522384083550949823"
-        },
-        {
-          "file": "apps/sk-app/src/app.html",
-          "hash": "1813781867429465748"
-        },
-        {
-          "file": "apps/sk-app/src/index.test.ts",
-          "hash": "4899821940437047382"
-        },
-        {
-          "file": "apps/sk-app/src/lib/index.ts",
-          "hash": "4692936798736377880"
-        },
-        {
-          "file": "apps/sk-app/src/routes/+layout.svelte",
-          "hash": "2156240562434360226"
-        },
-        {
-          "file": "apps/sk-app/src/routes/+page.svelte",
-          "hash": "9598344315642950468"
-        },
-        {
-          "file": "apps/sk-app/src/style.css",
-          "hash": "9190248359633066797"
-        },
-        {
-          "file": "apps/sk-app/static/favicon.png",
-          "hash": "11504680974745960892"
-        },
-        {
-          "file": "apps/sk-app/svelte.config.js",
-          "hash": "13579054079028518411"
-        },
-        {
-          "file": "apps/sk-app/tests/test.ts",
-          "hash": "16596097029166692734"
-        },
-        {
-          "file": "apps/sk-app/tsconfig.json",
-          "hash": "16441222529652817148"
-        },
-        {
-          "file": "apps/sk-app/vite.config.ts",
-          "hash": "6755486746913286723"
-        }
-      ],
       "react-app": [
         {
           "file": "apps/react-app/.eslintrc.cjs",
@@ -364,41 +92,326 @@
           "file": "apps/react-app/vite.config.ts",
           "hash": "15614405044306213384"
         }
+      ],
+      "mono-poly": [
+        {
+          "file": ".gitignore",
+          "hash": "3366260536551421425"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "10030903231351861547"
+        },
+        {
+          "file": "README.md",
+          "hash": "6851514958260873944"
+        },
+        {
+          "file": "nx.json",
+          "hash": "5238719712565003882"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "5408681603661307263"
+        },
+        {
+          "file": "package.json",
+          "hash": "4283676108399911214",
+          "deps": [
+            "npm:@nx/eslint",
+            "npm:nx"
+          ]
+        },
+        {
+          "file": "pnpm-lock.yaml",
+          "hash": "8890209347091502182"
+        },
+        {
+          "file": "pnpm-workspace.yaml",
+          "hash": "629357993458335914"
+        }
+      ],
+      "remix-app": [
+        {
+          "file": "apps/remix-app/.eslintrc.cjs",
+          "hash": "17337184654626309665"
+        },
+        {
+          "file": "apps/remix-app/.gitignore",
+          "hash": "2267986781002139465"
+        },
+        {
+          "file": "apps/remix-app/README.md",
+          "hash": "18062678541463716283"
+        },
+        {
+          "file": "apps/remix-app/app/root.tsx",
+          "hash": "10845095113979242482"
+        },
+        {
+          "file": "apps/remix-app/app/routes/_index.tsx",
+          "hash": "3166941058342787063"
+        },
+        {
+          "file": "apps/remix-app/package.json",
+          "hash": "7587392720877586422",
+          "deps": [
+            "npm:@remix-run/node",
+            "npm:@remix-run/react",
+            "npm:@remix-run/serve",
+            "npm:isbot",
+            "npm:react",
+            "npm:react-dom",
+            "shared-utils",
+            "npm:@remix-run/dev",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:eslint",
+            "npm:eslint-import-resolver-typescript",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vite-tsconfig-paths"
+          ]
+        },
+        {
+          "file": "apps/remix-app/public/favicon.ico",
+          "hash": "3730367829618743876"
+        },
+        {
+          "file": "apps/remix-app/tsconfig.json",
+          "hash": "5672995418865964270"
+        },
+        {
+          "file": "apps/remix-app/vite.config.ts",
+          "hash": "6610264219224123987"
+        }
+      ],
+      "vue-app": [
+        {
+          "file": "apps/vue-app/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "apps/vue-app/.vscode/extensions.json",
+          "hash": "4987258316065159537"
+        },
+        {
+          "file": "apps/vue-app/README.md",
+          "hash": "4021204212156631199"
+        },
+        {
+          "file": "apps/vue-app/index.html",
+          "hash": "2041538145237984364"
+        },
+        {
+          "file": "apps/vue-app/package.json",
+          "hash": "6579563186792379249",
+          "deps": [
+            "shared-utils",
+            "npm:vue",
+            "npm:@vitejs/plugin-vue",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vue-tsc"
+          ]
+        },
+        {
+          "file": "apps/vue-app/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/vue-app/src/App.vue",
+          "hash": "18217346160591149249"
+        },
+        {
+          "file": "apps/vue-app/src/assets/vue.svg",
+          "hash": "6215844894841429247"
+        },
+        {
+          "file": "apps/vue-app/src/components/HelloWorld.vue",
+          "hash": "13129731235419273556"
+        },
+        {
+          "file": "apps/vue-app/src/main.ts",
+          "hash": "16191179116649366684"
+        },
+        {
+          "file": "apps/vue-app/src/style.css",
+          "hash": "9062188384862178705"
+        },
+        {
+          "file": "apps/vue-app/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "apps/vue-app/tsconfig.json",
+          "hash": "1924584178197274420"
+        },
+        {
+          "file": "apps/vue-app/tsconfig.node.json",
+          "hash": "4208030242441905014"
+        },
+        {
+          "file": "apps/vue-app/vite.config.ts",
+          "hash": "16362039650580913027"
+        }
+      ],
+      "sk-app": [
+        {
+          "file": "apps/sk-app/.eslintignore",
+          "hash": "12866345277008372755"
+        },
+        {
+          "file": "apps/sk-app/.eslintrc.cjs",
+          "hash": "15647399974590712086"
+        },
+        {
+          "file": "apps/sk-app/.gitignore",
+          "hash": "9815671046980959070"
+        },
+        {
+          "file": "apps/sk-app/.npmrc",
+          "hash": "16306061729883149313"
+        },
+        {
+          "file": "apps/sk-app/.prettierignore",
+          "hash": "14944193782101443844"
+        },
+        {
+          "file": "apps/sk-app/.prettierrc",
+          "hash": "405103432484641903"
+        },
+        {
+          "file": "apps/sk-app/README.md",
+          "hash": "11542502170952645301"
+        },
+        {
+          "file": "apps/sk-app/package.json",
+          "hash": "10362888655574709881",
+          "deps": [
+            "shared-utils",
+            "npm:@playwright/test",
+            "npm:@sveltejs/adapter-auto",
+            "npm:@sveltejs/kit",
+            "npm:@sveltejs/vite-plugin-svelte",
+            "npm:@types/eslint",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-svelte",
+            "npm:prettier",
+            "npm:prettier-plugin-svelte",
+            "npm:svelte",
+            "npm:svelte-check",
+            "npm:tslib",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "apps/sk-app/playwright.config.ts",
+          "hash": "2563297502597556445"
+        },
+        {
+          "file": "apps/sk-app/src/app.d.ts",
+          "hash": "17522384083550949823"
+        },
+        {
+          "file": "apps/sk-app/src/app.html",
+          "hash": "1813781867429465748"
+        },
+        {
+          "file": "apps/sk-app/src/index.test.ts",
+          "hash": "4899821940437047382"
+        },
+        {
+          "file": "apps/sk-app/src/lib/index.ts",
+          "hash": "4692936798736377880"
+        },
+        {
+          "file": "apps/sk-app/src/routes/+layout.svelte",
+          "hash": "2156240562434360226"
+        },
+        {
+          "file": "apps/sk-app/src/routes/+page.svelte",
+          "hash": "9598344315642950468"
+        },
+        {
+          "file": "apps/sk-app/src/style.css",
+          "hash": "9190248359633066797"
+        },
+        {
+          "file": "apps/sk-app/static/favicon.png",
+          "hash": "11504680974745960892"
+        },
+        {
+          "file": "apps/sk-app/svelte.config.js",
+          "hash": "13579054079028518411"
+        },
+        {
+          "file": "apps/sk-app/tests/test.ts",
+          "hash": "16596097029166692734"
+        },
+        {
+          "file": "apps/sk-app/tsconfig.json",
+          "hash": "16441222529652817148"
+        },
+        {
+          "file": "apps/sk-app/vite.config.ts",
+          "hash": "6755486746913286723"
+        }
+      ],
+      "shared-utils": [
+        {
+          "file": "packages/shared-utils/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "packages/shared-utils/index.html",
+          "hash": "18035450226464705408"
+        },
+        {
+          "file": "packages/shared-utils/package.json",
+          "hash": "14558595006206986530",
+          "deps": [
+            "npm:typescript",
+            "npm:vite",
+            "npm:vite-plugin-dts"
+          ]
+        },
+        {
+          "file": "packages/shared-utils/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "packages/shared-utils/src/main.ts",
+          "hash": "10559951445426176031"
+        },
+        {
+          "file": "packages/shared-utils/src/typescript.svg",
+          "hash": "8667544980518902788"
+        },
+        {
+          "file": "packages/shared-utils/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "packages/shared-utils/tsconfig.json",
+          "hash": "15337872224458810919"
+        },
+        {
+          "file": "packages/shared-utils/vite.config.ts",
+          "hash": "14379223959308855068"
+        }
       ]
     },
-    "nonProjectFiles": [
-      {
-        "file": ".gitignore",
-        "hash": "6713243034170298283"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "10030903231351861547"
-      },
-      {
-        "file": "README.md",
-        "hash": "6851514958260873944"
-      },
-      {
-        "file": "nx.json",
-        "hash": "6288411810046565348"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "5408681603661307263"
-      },
-      {
-        "file": "package.json",
-        "hash": "13079690816684038414"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "168494627593815766"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "629357993458335914"
-      }
-    ]
+    "nonProjectFiles": []
   }
 }
