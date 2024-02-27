@@ -6,5 +6,21 @@
         "cacheableOperations": ["build", "test"]
       }
     }
+  },
+  "namedInputs": {
+    "noMarkdown": ["!{projectRoot}/**/*.md"],
+    "noTests": ["!{projectRoot}/**/*.spec.{ts,js,svelte}"]
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": ["noMarkdown", "^noMarkdown", "noTests", "^noTests"],
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "inputs": ["noMarkdown", "^noMarkdown"]
+    }
   }
 }

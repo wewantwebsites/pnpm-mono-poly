@@ -4,3 +4,18 @@ node_modules
 dist
 build
 
+apps/*/node_modules
+apps/*/dist
+apps/*/build
+packages/*/node_modules
+packages/*/dist
+packages/*/build
+
+.nx/cache/
+.nx/cache
+.nx/cache/nx-console-project-graph/static/environment.js
+.nx/cache/file-map.json
+.nx/cache/nx_files.nxt
+.nx/cache/project-graph.json
+.nx/cache/run.json
+.nx/cache/nx-console-project-graph/static/environment.js
