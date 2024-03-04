@@ -7578,18 +7578,18 @@
         "hash": "sha512-W29RiK/xtpCGqn6f3ixfRYGk+zRyr+Ew9F2E20BfXxT5/euLdA/Nm7fO7OeTGuAmTs30cpgInyJ0cYe708YTZw=="
       }
     },
-    "npm:npm-normalize-package-bin@2.0.0": {
+    "npm:npm-normalize-package-bin": {
       "type": "npm",
-      "name": "npm:npm-normalize-package-bin@2.0.0",
+      "name": "npm:npm-normalize-package-bin",
       "data": {
         "version": "2.0.0",
         "packageName": "npm-normalize-package-bin",
         "hash": "sha512-awzfKUO7v0FscrSpRoogyNm0sajikhBWpU0QMrW09AMi9n1PoKU6WaIqUzuJSQnpciZZmJ/jMZ2Egfmb/9LiWQ=="
       }
     },
-    "npm:npm-normalize-package-bin": {
+    "npm:npm-normalize-package-bin@3.0.1": {
       "type": "npm",
-      "name": "npm:npm-normalize-package-bin",
+      "name": "npm:npm-normalize-package-bin@3.0.1",
       "data": {
         "version": "3.0.1",
         "packageName": "npm-normalize-package-bin",
@@ -19763,7 +19763,7 @@
     },
     {
       "source": "npm:npm-bundled",
-      "target": "npm:npm-normalize-package-bin@2.0.0",
+      "target": "npm:npm-normalize-package-bin",
       "type": "static"
     },
     {
@@ -19828,7 +19828,7 @@
     },
     {
       "source": "npm:npm-packlist",
-      "target": "npm:npm-normalize-package-bin@2.0.0",
+      "target": "npm:npm-normalize-package-bin",
       "type": "static"
     },
     {
@@ -19838,7 +19838,7 @@
     },
     {
       "source": "npm:npm-pick-manifest",
-      "target": "npm:npm-normalize-package-bin",
+      "target": "npm:npm-normalize-package-bin@3.0.1",
       "type": "static"
     },
     {

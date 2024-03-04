@@ -93,6 +93,102 @@
           "hash": "15614405044306213384"
         }
       ],
+      "shared-svelte": [
+        {
+          "file": "packages/shared-svelte/.eslintignore",
+          "hash": "12866345277008372755"
+        },
+        {
+          "file": "packages/shared-svelte/.eslintrc.cjs",
+          "hash": "15647399974590712086"
+        },
+        {
+          "file": "packages/shared-svelte/.gitignore",
+          "hash": "1736406243314219225"
+        },
+        {
+          "file": "packages/shared-svelte/.npmrc",
+          "hash": "16306061729883149313"
+        },
+        {
+          "file": "packages/shared-svelte/.prettierignore",
+          "hash": "14944193782101443844"
+        },
+        {
+          "file": "packages/shared-svelte/.prettierrc",
+          "hash": "405103432484641903"
+        },
+        {
+          "file": "packages/shared-svelte/README.md",
+          "hash": "13598037845263670707"
+        },
+        {
+          "file": "packages/shared-svelte/package.json",
+          "hash": "1986715942953015482",
+          "deps": [
+            "npm:vite-plugin-dts",
+            "npm:@sveltejs/adapter-auto",
+            "npm:@sveltejs/kit",
+            "npm:@sveltejs/package",
+            "npm:@sveltejs/vite-plugin-svelte",
+            "npm:@types/eslint",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-svelte",
+            "npm:prettier",
+            "npm:prettier-plugin-svelte",
+            "npm:publint",
+            "npm:svelte",
+            "npm:svelte-check",
+            "npm:tslib",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/shared-svelte/src/app.d.ts",
+          "hash": "17522384083550949823"
+        },
+        {
+          "file": "packages/shared-svelte/src/app.html",
+          "hash": "16224395445286036851"
+        },
+        {
+          "file": "packages/shared-svelte/src/index.test.ts",
+          "hash": "4899821940437047382"
+        },
+        {
+          "file": "packages/shared-svelte/src/lib/TodoList.svelte",
+          "hash": "8355848429955856786"
+        },
+        {
+          "file": "packages/shared-svelte/src/lib/index.ts",
+          "hash": "13004432170221128010"
+        },
+        {
+          "file": "packages/shared-svelte/src/routes/+page.svelte",
+          "hash": "2521577195872908923"
+        },
+        {
+          "file": "packages/shared-svelte/static/favicon.png",
+          "hash": "11504680974745960892"
+        },
+        {
+          "file": "packages/shared-svelte/svelte.config.js",
+          "hash": "15542221574997392237"
+        },
+        {
+          "file": "packages/shared-svelte/tsconfig.json",
+          "hash": "16417681267255489487"
+        },
+        {
+          "file": "packages/shared-svelte/vite.config.ts",
+          "hash": "6755486746913286723"
+        }
+      ],
       "mono-poly": [
         {
           "file": ".gitignore",
@@ -104,7 +200,11 @@
         },
         {
           "file": "README.md",
-          "hash": "6851514958260873944"
+          "hash": "3206834567368844887"
+        },
+        {
+          "file": "TODO.md",
+          "hash": "15487910645324437968"
         },
         {
           "file": "nx.json",
@@ -124,71 +224,54 @@
         },
         {
           "file": "pnpm-lock.yaml",
-          "hash": "8890209347091502182"
+          "hash": "5603935445416059554"
         },
         {
           "file": "pnpm-workspace.yaml",
           "hash": "629357993458335914"
         }
       ],
-      "remix-app": [
+      "shared-utils": [
         {
-          "file": "apps/remix-app/.eslintrc.cjs",
-          "hash": "17337184654626309665"
+          "file": "packages/shared-utils/.gitignore",
+          "hash": "13046175384202504187"
         },
         {
-          "file": "apps/remix-app/.gitignore",
-          "hash": "2267986781002139465"
+          "file": "packages/shared-utils/index.html",
+          "hash": "18035450226464705408"
         },
         {
-          "file": "apps/remix-app/README.md",
-          "hash": "18062678541463716283"
-        },
-        {
-          "file": "apps/remix-app/app/root.tsx",
-          "hash": "10845095113979242482"
-        },
-        {
-          "file": "apps/remix-app/app/routes/_index.tsx",
-          "hash": "3166941058342787063"
-        },
-        {
-          "file": "apps/remix-app/package.json",
-          "hash": "7587392720877586422",
+          "file": "packages/shared-utils/package.json",
+          "hash": "14558595006206986530",
           "deps": [
-            "npm:@remix-run/node",
-            "npm:@remix-run/react",
-            "npm:@remix-run/serve",
-            "npm:isbot",
-            "npm:react",
-            "npm:react-dom",
-            "shared-utils",
-            "npm:@remix-run/dev",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:eslint",
-            "npm:eslint-import-resolver-typescript",
-            "npm:eslint-plugin-import",
-            "npm:eslint-plugin-jsx-a11y",
-            "npm:eslint-plugin-react",
-            "npm:eslint-plugin-react-hooks",
             "npm:typescript",
             "npm:vite",
-            "npm:vite-tsconfig-paths"
+            "npm:vite-plugin-dts"
           ]
         },
         {
-          "file": "apps/remix-app/public/favicon.ico",
-          "hash": "3730367829618743876"
+          "file": "packages/shared-utils/public/vite.svg",
+          "hash": "16046085400642193116"
         },
         {
-          "file": "apps/remix-app/tsconfig.json",
-          "hash": "5672995418865964270"
+          "file": "packages/shared-utils/src/main.ts",
+          "hash": "10559951445426176031"
         },
         {
-          "file": "apps/remix-app/vite.config.ts",
-          "hash": "6610264219224123987"
+          "file": "packages/shared-utils/src/typescript.svg",
+          "hash": "8667544980518902788"
+        },
+        {
+          "file": "packages/shared-utils/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "packages/shared-utils/tsconfig.json",
+          "hash": "15337872224458810919"
+        },
+        {
+          "file": "packages/shared-utils/vite.config.ts",
+          "hash": "14379223959308855068"
         }
       ],
       "vue-app": [
@@ -210,8 +293,9 @@
         },
         {
           "file": "apps/vue-app/package.json",
-          "hash": "6579563186792379249",
+          "hash": "6740109952553561808",
           "deps": [
+            "shared-svelte",
             "shared-utils",
             "npm:vue",
             "npm:@vitejs/plugin-vue",
@@ -292,8 +376,9 @@
         },
         {
           "file": "apps/sk-app/package.json",
-          "hash": "10362888655574709881",
+          "hash": "17889062768959945828",
           "deps": [
+            "shared-svelte",
             "shared-utils",
             "npm:@playwright/test",
             "npm:@sveltejs/adapter-auto",
@@ -325,7 +410,7 @@
         },
         {
           "file": "apps/sk-app/src/app.html",
-          "hash": "1813781867429465748"
+          "hash": "18441766884450945979"
         },
         {
           "file": "apps/sk-app/src/index.test.ts",
@@ -341,7 +426,7 @@
         },
         {
           "file": "apps/sk-app/src/routes/+page.svelte",
-          "hash": "9598344315642950468"
+          "hash": "6828244489522889650"
         },
         {
           "file": "apps/sk-app/src/style.css",
@@ -368,47 +453,64 @@
           "hash": "6755486746913286723"
         }
       ],
-      "shared-utils": [
+      "remix-app": [
         {
-          "file": "packages/shared-utils/.gitignore",
-          "hash": "13046175384202504187"
+          "file": "apps/remix-app/.eslintrc.cjs",
+          "hash": "17337184654626309665"
         },
         {
-          "file": "packages/shared-utils/index.html",
-          "hash": "18035450226464705408"
+          "file": "apps/remix-app/.gitignore",
+          "hash": "2267986781002139465"
         },
         {
-          "file": "packages/shared-utils/package.json",
-          "hash": "14558595006206986530",
+          "file": "apps/remix-app/README.md",
+          "hash": "18062678541463716283"
+        },
+        {
+          "file": "apps/remix-app/app/root.tsx",
+          "hash": "10845095113979242482"
+        },
+        {
+          "file": "apps/remix-app/app/routes/_index.tsx",
+          "hash": "3166941058342787063"
+        },
+        {
+          "file": "apps/remix-app/package.json",
+          "hash": "7587392720877586422",
           "deps": [
+            "npm:@remix-run/node",
+            "npm:@remix-run/react",
+            "npm:@remix-run/serve",
+            "npm:isbot",
+            "npm:react",
+            "npm:react-dom",
+            "shared-utils",
+            "npm:@remix-run/dev",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:eslint",
+            "npm:eslint-import-resolver-typescript",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
             "npm:typescript",
             "npm:vite",
-            "npm:vite-plugin-dts"
+            "npm:vite-tsconfig-paths"
           ]
         },
         {
-          "file": "packages/shared-utils/public/vite.svg",
-          "hash": "16046085400642193116"
+          "file": "apps/remix-app/public/favicon.ico",
+          "hash": "3730367829618743876"
         },
         {
-          "file": "packages/shared-utils/src/main.ts",
-          "hash": "10559951445426176031"
+          "file": "apps/remix-app/tsconfig.json",
+          "hash": "5672995418865964270"
         },
         {
-          "file": "packages/shared-utils/src/typescript.svg",
-          "hash": "8667544980518902788"
-        },
-        {
-          "file": "packages/shared-utils/src/vite-env.d.ts",
-          "hash": "12946363841406869089"
-        },
-        {
-          "file": "packages/shared-utils/tsconfig.json",
-          "hash": "15337872224458810919"
-        },
-        {
-          "file": "packages/shared-utils/vite.config.ts",
-          "hash": "14379223959308855068"
+          "file": "apps/remix-app/vite.config.ts",
+          "hash": "6610264219224123987"
         }
       ]
     },

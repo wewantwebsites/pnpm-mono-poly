@@ -1,5 +1,115 @@
 {
   "nodes": {
+    "shared-svelte": {
+      "name": "shared-svelte",
+      "type": "lib",
+      "data": {
+        "root": "packages/shared-svelte",
+        "targets": {
+          "lint": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "lint"
+            },
+            "configurations": {}
+          },
+          "build": {
+            "executor": "nx:run-script",
+            "cache": true,
+            "inputs": [
+              "noMarkdown",
+              "^noMarkdown",
+              "noTests",
+              "^noTests"
+            ],
+            "dependsOn": [
+              "^build"
+            ],
+            "options": {
+              "script": "build"
+            },
+            "configurations": {}
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "dependsOn": [
+              "^build"
+            ],
+            "options": {
+              "script": "dev"
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "nx:run-script",
+            "inputs": [
+              "noMarkdown",
+              "^noMarkdown"
+            ],
+            "cache": true,
+            "options": {
+              "script": "test"
+            },
+            "configurations": {}
+          },
+          "preview": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "preview"
+            },
+            "configurations": {}
+          },
+          "package": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "package"
+            },
+            "configurations": {}
+          },
+          "prepublishOnly": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "prepublishOnly"
+            },
+            "configurations": {}
+          },
+          "check": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "check"
+            },
+            "configurations": {}
+          },
+          "check:watch": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "check:watch"
+            },
+            "configurations": {}
+          },
+          "format": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "format"
+            },
+            "configurations": {}
+          },
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          }
+        },
+        "sourceRoot": "packages/shared-svelte",
+        "name": "shared-svelte",
+        "projectType": "library",
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
     "shared-utils": {
       "name": "shared-utils",
       "type": "lib",
@@ -7940,18 +8050,18 @@
         "hash": "sha512-W29RiK/xtpCGqn6f3ixfRYGk+zRyr+Ew9F2E20BfXxT5/euLdA/Nm7fO7OeTGuAmTs30cpgInyJ0cYe708YTZw=="
       }
     },
-    "npm:npm-normalize-package-bin@2.0.0": {
+    "npm:npm-normalize-package-bin": {
       "type": "npm",
-      "name": "npm:npm-normalize-package-bin@2.0.0",
+      "name": "npm:npm-normalize-package-bin",
       "data": {
         "version": "2.0.0",
         "packageName": "npm-normalize-package-bin",
         "hash": "sha512-awzfKUO7v0FscrSpRoogyNm0sajikhBWpU0QMrW09AMi9n1PoKU6WaIqUzuJSQnpciZZmJ/jMZ2Egfmb/9LiWQ=="
       }
     },
-    "npm:npm-normalize-package-bin": {
+    "npm:npm-normalize-package-bin@3.0.1": {
       "type": "npm",
-      "name": "npm:npm-normalize-package-bin",
+      "name": "npm:npm-normalize-package-bin@3.0.1",
       "data": {
         "version": "3.0.1",
         "packageName": "npm-normalize-package-bin",
@@ -10768,6 +10878,108 @@
     }
   },
   "dependencies": {
+    "shared-svelte": [
+      {
+        "source": "shared-svelte",
+        "target": "npm:vite-plugin-dts",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:@sveltejs/adapter-auto",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:@sveltejs/kit",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:@sveltejs/package",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:@sveltejs/vite-plugin-svelte",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:@types/eslint",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:@typescript-eslint/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:@typescript-eslint/parser",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:eslint",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:eslint-config-prettier",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:eslint-plugin-svelte",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:prettier",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:prettier-plugin-svelte",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:publint",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:svelte",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:svelte-check",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:vite",
+        "type": "static"
+      },
+      {
+        "source": "shared-svelte",
+        "target": "npm:vitest",
+        "type": "static"
+      }
+    ],
     "shared-utils": [
       {
         "source": "shared-utils",
@@ -10957,6 +11169,11 @@
     "vue-app": [
       {
         "source": "vue-app",
+        "target": "shared-svelte",
+        "type": "static"
+      },
+      {
+        "source": "vue-app",
         "target": "shared-utils",
         "type": "static"
       },
@@ -10987,6 +11204,11 @@
       }
     ],
     "sk-app": [
+      {
+        "source": "sk-app",
+        "target": "shared-svelte",
+        "type": "static"
+      },
       {
         "source": "sk-app",
         "target": "shared-utils",
@@ -21267,7 +21489,7 @@
     "npm:npm-bundled": [
       {
         "source": "npm:npm-bundled",
-        "target": "npm:npm-normalize-package-bin@2.0.0",
+        "target": "npm:npm-normalize-package-bin",
         "type": "static"
       }
     ],
@@ -21340,7 +21562,7 @@
       },
       {
         "source": "npm:npm-packlist",
-        "target": "npm:npm-normalize-package-bin@2.0.0",
+        "target": "npm:npm-normalize-package-bin",
         "type": "static"
       }
     ],
@@ -21352,7 +21574,7 @@
       },
       {
         "source": "npm:npm-pick-manifest",
-        "target": "npm:npm-normalize-package-bin",
+        "target": "npm:npm-normalize-package-bin@3.0.1",
         "type": "static"
       },
       {

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "shared-svelte": "workspace:^",
     "shared-utils": "workspace:^",
     "vue": "^3.4.19"
   },

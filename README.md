@@ -24,3 +24,12 @@ to add to a specific app
 
 to add to the root and be widely available
 `pnpm add [package] -w` where the `-w` flag tells pnpm this is a workspace-root dep
+
+## Using Nx (nrwl) 
+using `nx` is similar to using `pnpm workspace` commands
+
+```bash
+npx nx build remix-app
+npx nx run-many -t build
+```
+

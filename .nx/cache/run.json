@@ -1,64 +1,20 @@
 {
   "run": {
-    "command": "nx run-many -t build",
-    "startTime": "2024-02-27T02:23:01.879Z",
-    "endTime": "2024-02-27T02:23:03.995Z",
+    "command": "nx build shared-svelte",
+    "startTime": "2024-03-04T05:03:33.073Z",
+    "endTime": "2024-03-04T05:03:33.098Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "shared-utils:build",
+      "taskId": "shared-svelte:build",
       "target": "build",
-      "projectName": "shared-utils",
-      "hash": "16703416220606529203",
-      "startTime": "2024-02-27T02:23:01.884Z",
-      "endTime": "2024-02-27T02:23:01.903Z",
+      "projectName": "shared-svelte",
+      "hash": "268044113188309214",
+      "startTime": "2024-03-04T05:03:33.077Z",
+      "endTime": "2024-03-04T05:03:33.098Z",
       "params": "",
       "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
-      "taskId": "remix-app:build",
-      "target": "build",
-      "projectName": "remix-app",
-      "hash": "5471654942625806004",
-      "startTime": "2024-02-27T02:23:01.906Z",
-      "endTime": "2024-02-27T02:23:01.910Z",
-      "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
-      "taskId": "sk-app:build",
-      "target": "build",
-      "projectName": "sk-app",
-      "hash": "12006348863292065001",
-      "startTime": "2024-02-27T02:23:01.910Z",
-      "endTime": "2024-02-27T02:23:01.911Z",
-      "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
-      "taskId": "react-app:build",
-      "target": "build",
-      "projectName": "react-app",
-      "hash": "12091444887257475806",
-      "startTime": "2024-02-27T02:23:01.906Z",
-      "endTime": "2024-02-27T02:23:03.604Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "vue-app:build",
-      "target": "build",
-      "projectName": "vue-app",
-      "hash": "17598399553489558414",
-      "startTime": "2024-02-27T02:23:01.906Z",
-      "endTime": "2024-02-27T02:23:03.995Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
       "status": 0
     }
   ]
