@@ -2,7 +2,6 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-// @ts-expect-error - no types for shared-utils
 import { isEven } from 'shared-utils';
 import Button from './Button';
 
