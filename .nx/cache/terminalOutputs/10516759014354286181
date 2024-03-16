@@ -1,7 +1,0 @@
-
-> react-app@0.0.0 build /Users/casimerguzdzioliv/Code/mono-poly/apps/react-app
-> tsc && vite build
-
-src/App.tsx(5,24): error TS7016: Could not find a declaration file for module 'shared-utils'. '/Users/casimerguzdzioliv/Code/mono-poly/packages/shared-utils/dist/index.js' implicitly has an 'any' type.
-  Try `npm i --save-dev @types/shared-utils` if it exists or add a new declaration (.d.ts) file containing `declare module 'shared-utils';`
-[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 2.[39m
