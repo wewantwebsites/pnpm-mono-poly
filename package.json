@@ -1,5 +1,6 @@
 {
   "name": "mono-poly",
+  "author": "wewantweb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +10,6 @@
     "test": "nx exec -- node ./run-tests.js"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "nx": "^18.0.5"
