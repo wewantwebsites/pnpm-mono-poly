@@ -128,9 +128,6 @@ importers:
 
   apps/sk-app:
     dependencies:
-      shared-svelte:
-        specifier: workspace:^
-        version: link:../../packages/shared-svelte
       shared-utils:
         specifier: workspace:^
         version: link:../../packages/shared-utils

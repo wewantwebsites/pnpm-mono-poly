@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-// @ts-expect-error - no types for shared-utils
 import { isEven } from 'shared-utils';
 
 defineProps<{ msg: string }>();

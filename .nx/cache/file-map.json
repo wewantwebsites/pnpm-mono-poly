@@ -152,10 +152,7 @@
         {
           "file": "package.json",
           "hash": "4283676108399911214",
-          "deps": [
-            "npm:@nx/eslint",
-            "npm:nx"
-          ]
+          "deps": ["npm:@nx/eslint", "npm:nx"]
         },
         {
           "file": "pnpm-lock.yaml",
@@ -261,12 +258,8 @@
         },
         {
           "file": "packages/shared-utils/package.json",
-          "hash": "14558595006206986530",
-          "deps": [
-            "npm:typescript",
-            "npm:vite",
-            "npm:vite-plugin-dts"
-          ]
+          "hash": "10785929710269489818",
+          "deps": ["npm:typescript", "npm:vite", "npm:vite-plugin-dts"]
         },
         {
           "file": "packages/shared-utils/public/vite.svg",
