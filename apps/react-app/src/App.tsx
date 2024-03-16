@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 // @ts-expect-error - no types for shared-utils
 import { isEven } from 'shared-utils';
+import Button from './Button';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Button />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count} and is {isEven(count) ? 'Even' : 'Odd'}
