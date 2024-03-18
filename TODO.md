@@ -1,9 +1,15 @@
-- make shared components using:
-- [x] svelte
-- [ ] lit
-- [ ] qwik
+# The ToDo List
 
-- [x] consume components from svelte
-    - this didn't turn out great, wasn't able to build the WC properly to be implementd in React & Vue. Used Vite Lib and SvelteKit Lib. 
-- [ ] consume components from lit
-- [ ] consume components from qwik
+## Svelte
+
+- [x] make components
+- [x] consume web components
+  - web components are kinda wack though
+- [x] storybook
+- [ ] consume wrapped components
+
+## Lit
+
+- [ ] make components
+- [ ] consume web components
+- [ ] storybook

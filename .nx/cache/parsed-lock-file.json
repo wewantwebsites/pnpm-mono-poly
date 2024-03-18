@@ -3285,6 +3285,15 @@
         "hash": "sha512-9o9JXDsYjNaDgz/cY5+jv694+aik/1aiRGGvsCv68e1p/ob0glkGKav4lnJe2VJqD+gCmaARoD8GOJlhoQl8JQ=="
       }
     },
+    "npm:@storybook/addon-themes": {
+      "type": "npm",
+      "name": "npm:@storybook/addon-themes",
+      "data": {
+        "version": "7.6.17",
+        "packageName": "@storybook/addon-themes",
+        "hash": "sha512-i/dI3GKlJmQv0Di9HM3fKJvFIab55kvva0vXCGBkqSw3wYoZuq++npkWeDnjjZUvggV12H2RTdGqYwMCXB/GHg=="
+      }
+    },
     "npm:@storybook/addon-toolbars": {
       "type": "npm",
       "name": "npm:@storybook/addon-toolbars",
@@ -21384,6 +21393,11 @@
     },
     {
       "source": "npm:@storybook/addon-outline",
+      "target": "npm:ts-dedent",
+      "type": "static"
+    },
+    {
+      "source": "npm:@storybook/addon-themes",
       "target": "npm:ts-dedent",
       "type": "static"
     },
