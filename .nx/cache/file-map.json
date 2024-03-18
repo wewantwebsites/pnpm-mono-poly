@@ -47,6 +47,72 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
+      "mono-poly": [
+        {
+          "file": ".gitignore",
+          "hash": "16917606740721301920"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "16448050467312557263"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "10030903231351861547"
+        },
+        {
+          "file": "README.md",
+          "hash": "3206834567368844887"
+        },
+        {
+          "file": "TODO.md",
+          "hash": "517820389886074571"
+        },
+        {
+          "file": "nx.json",
+          "hash": "16644083669939536850"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "5408681603661307263"
+        },
+        {
+          "file": "package.json",
+          "hash": "15768054745124601085",
+          "deps": [
+            "npm:@nx/eslint",
+            "npm:react",
+            "npm:react-dom",
+            "npm:@nx/js",
+            "npm:@nx/storybook",
+            "npm:@nx/web",
+            "npm:@storybook/core-server",
+            "npm:@swc/core",
+            "npm:nx",
+            "npm:prettier",
+            "npm:storybook",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "pnpm-lock.yaml",
+          "hash": "14581000234936910237"
+        },
+        {
+          "file": "pnpm-workspace.yaml",
+          "hash": "629357993458335914"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "16936441711144470533"
+        }
+      ],
       "remix-app": [
         {
           "file": "apps/remix-app/.eslintrc.cjs",
@@ -120,86 +186,97 @@
           ]
         }
       ],
-      "vue-app": [
+      "lit-comps": [
         {
-          "file": "apps/vue-app/.gitignore",
+          "file": "packages/lit-comps/.gitignore",
           "hash": "13046175384202504187"
         },
         {
-          "file": "apps/vue-app/.vscode/extensions.json",
-          "hash": "4987258316065159537"
+          "file": "packages/lit-comps/index.html",
+          "hash": "7811396764357479814"
         },
         {
-          "file": "apps/vue-app/README.md",
-          "hash": "4021204212156631199"
-        },
-        {
-          "file": "apps/vue-app/index.html",
-          "hash": "2041538145237984364"
-        },
-        {
-          "file": "apps/vue-app/package.json",
-          "hash": "12580015597892696408",
+          "file": "packages/lit-comps/package.json",
+          "hash": "2475667914376738496",
           "deps": [
-            "sf-components",
-            "shared-utils",
-            "npm:vue",
-            "npm:@vitejs/plugin-vue",
-            "npm:rollup-plugin-postcss-lit",
             "npm:typescript",
-            "npm:vite",
-            "npm:vue-tsc"
+            "npm:vite"
           ]
         },
         {
-          "file": "apps/vue-app/public/vite.svg",
+          "file": "packages/lit-comps/public/vite.svg",
           "hash": "16046085400642193116"
         },
         {
-          "file": "apps/vue-app/src/App.vue",
-          "hash": "14835422094384327388"
+          "file": "packages/lit-comps/src/assets/lit.svg",
+          "hash": "1981814004099820666"
         },
         {
-          "file": "apps/vue-app/src/assets/vue.svg",
-          "hash": "6215844894841429247"
+          "file": "packages/lit-comps/src/index.css",
+          "hash": "4837301969721350222"
         },
         {
-          "file": "apps/vue-app/src/components/Button.vue",
-          "hash": "12453462646271273763"
-        },
-        {
-          "file": "apps/vue-app/src/components/HelloWorld.vue",
-          "hash": "858785026433704043"
-        },
-        {
-          "file": "apps/vue-app/src/main.ts",
-          "hash": "16191179116649366684",
+          "file": "packages/lit-comps/src/my-element.ts",
+          "hash": "8504065099091546269",
           "deps": [
-            "npm:vue"
+            "npm:lit",
+            "npm:/vite.svg"
           ]
         },
         {
-          "file": "apps/vue-app/src/style.css",
-          "hash": "9062188384862178705"
-        },
-        {
-          "file": "apps/vue-app/src/vite-env.d.ts",
+          "file": "packages/lit-comps/src/vite-env.d.ts",
           "hash": "12946363841406869089"
         },
         {
-          "file": "apps/vue-app/tsconfig.json",
-          "hash": "1924584178197274420"
+          "file": "packages/lit-comps/tsconfig.json",
+          "hash": "6230347442353310866"
+        }
+      ],
+      "shared-utils": [
+        {
+          "file": "packages/shared-utils/.gitignore",
+          "hash": "13046175384202504187"
         },
         {
-          "file": "apps/vue-app/tsconfig.node.json",
-          "hash": "4208030242441905014"
+          "file": "packages/shared-utils/index.html",
+          "hash": "18035450226464705408"
         },
         {
-          "file": "apps/vue-app/vite.config.ts",
-          "hash": "9198931412947008242",
+          "file": "packages/shared-utils/package.json",
+          "hash": "10785929710269489818",
           "deps": [
+            "npm:typescript",
             "npm:vite",
-            "npm:@vitejs/plugin-vue"
+            "npm:vite-plugin-dts"
+          ]
+        },
+        {
+          "file": "packages/shared-utils/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "packages/shared-utils/src/main.ts",
+          "hash": "10559951445426176031"
+        },
+        {
+          "file": "packages/shared-utils/src/typescript.svg",
+          "hash": "8667544980518902788"
+        },
+        {
+          "file": "packages/shared-utils/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "packages/shared-utils/tsconfig.json",
+          "hash": "15337872224458810919"
+        },
+        {
+          "file": "packages/shared-utils/vite.config.ts",
+          "hash": "14379223959308855068",
+          "deps": [
+            "npm:path",
+            "npm:vite",
+            "npm:vite-plugin-dts"
           ]
         }
       ],
@@ -517,6 +594,10 @@
           "hash": "14044240558764071140"
         },
         {
+          "file": "packages/sf-components/src/lib/TextInput.svelte",
+          "hash": "10815211699163492735"
+        },
+        {
           "file": "packages/sf-components/src/lib/stories/Button.stories.ts",
           "hash": "16423960375098244828",
           "deps": [
@@ -531,8 +612,11 @@
           ]
         },
         {
-          "file": "packages/sf-components/src/lib/webcomponents/WCButton.svelte",
-          "hash": "16199891013619816040"
+          "file": "packages/sf-components/src/lib/stories/TextInput.stories.ts",
+          "hash": "13187169777663229303",
+          "deps": [
+            "npm:@storybook/svelte"
+          ]
         },
         {
           "file": "packages/sf-components/src/main.ts",
@@ -580,131 +664,89 @@
             "npm:@sveltejs/vite-plugin-svelte",
             "npm:vite-plugin-dts"
           ]
-        },
-        {
-          "file": "packages/sf-components/src/lib/TextInput.svelte",
-          "hash": "10815211699163492735"
-        },
-        {
-          "file": "packages/sf-components/src/lib/stories/TextInput.stories.ts",
-          "hash": "13187169777663229303",
-          "deps": [
-            "npm:@storybook/svelte"
-          ]
         }
       ],
-      "shared-utils": [
+      "vue-app": [
         {
-          "file": "packages/shared-utils/.gitignore",
+          "file": "apps/vue-app/.gitignore",
           "hash": "13046175384202504187"
         },
         {
-          "file": "packages/shared-utils/index.html",
-          "hash": "18035450226464705408"
+          "file": "apps/vue-app/.vscode/extensions.json",
+          "hash": "4987258316065159537"
         },
         {
-          "file": "packages/shared-utils/package.json",
-          "hash": "10785929710269489818",
+          "file": "apps/vue-app/README.md",
+          "hash": "4021204212156631199"
+        },
+        {
+          "file": "apps/vue-app/index.html",
+          "hash": "2041538145237984364"
+        },
+        {
+          "file": "apps/vue-app/package.json",
+          "hash": "12580015597892696408",
           "deps": [
+            "sf-components",
+            "shared-utils",
+            "npm:vue",
+            "npm:@vitejs/plugin-vue",
+            "npm:rollup-plugin-postcss-lit",
             "npm:typescript",
             "npm:vite",
-            "npm:vite-plugin-dts"
+            "npm:vue-tsc"
           ]
         },
         {
-          "file": "packages/shared-utils/public/vite.svg",
+          "file": "apps/vue-app/public/vite.svg",
           "hash": "16046085400642193116"
         },
         {
-          "file": "packages/shared-utils/src/main.ts",
-          "hash": "10559951445426176031"
+          "file": "apps/vue-app/src/App.vue",
+          "hash": "14835422094384327388"
         },
         {
-          "file": "packages/shared-utils/src/typescript.svg",
-          "hash": "8667544980518902788"
+          "file": "apps/vue-app/src/assets/vue.svg",
+          "hash": "6215844894841429247"
         },
         {
-          "file": "packages/shared-utils/src/vite-env.d.ts",
+          "file": "apps/vue-app/src/components/Button.vue",
+          "hash": "12453462646271273763"
+        },
+        {
+          "file": "apps/vue-app/src/components/HelloWorld.vue",
+          "hash": "858785026433704043"
+        },
+        {
+          "file": "apps/vue-app/src/main.ts",
+          "hash": "16191179116649366684",
+          "deps": [
+            "npm:vue"
+          ]
+        },
+        {
+          "file": "apps/vue-app/src/style.css",
+          "hash": "9062188384862178705"
+        },
+        {
+          "file": "apps/vue-app/src/vite-env.d.ts",
           "hash": "12946363841406869089"
         },
         {
-          "file": "packages/shared-utils/tsconfig.json",
-          "hash": "15337872224458810919"
+          "file": "apps/vue-app/tsconfig.json",
+          "hash": "1924584178197274420"
         },
         {
-          "file": "packages/shared-utils/vite.config.ts",
-          "hash": "14379223959308855068",
+          "file": "apps/vue-app/tsconfig.node.json",
+          "hash": "4208030242441905014"
+        },
+        {
+          "file": "apps/vue-app/vite.config.ts",
+          "hash": "9198931412947008242",
           "deps": [
-            "npm:path",
             "npm:vite",
-            "npm:vite-plugin-dts"
+            "npm:@vitejs/plugin-vue"
           ]
-        }
-      ],
-      "mono-poly": [
-        {
-          "file": ".gitignore",
-          "hash": "16917606740721301920"
-        },
-        {
-          "file": ".prettierignore",
-          "hash": "16448050467312557263"
-        },
-        {
-          "file": ".prettierrc",
-          "hash": "16267754514737964994"
-        },
-        {
-          "file": "LICENSE",
-          "hash": "10030903231351861547"
-        },
-        {
-          "file": "README.md",
-          "hash": "3206834567368844887"
-        },
-        {
-          "file": "TODO.md",
-          "hash": "517820389886074571"
-        },
-        {
-          "file": "nx.json",
-          "hash": "16644083669939536850"
-        },
-        {
-          "file": "package-lock.json",
-          "hash": "5408681603661307263"
-        },
-        {
-          "file": "package.json",
-          "hash": "15768054745124601085",
-          "deps": [
-            "npm:@nx/eslint",
-            "npm:react",
-            "npm:react-dom",
-            "npm:@nx/js",
-            "npm:@nx/storybook",
-            "npm:@nx/web",
-            "npm:@storybook/core-server",
-            "npm:@swc/core",
-            "npm:nx",
-            "npm:prettier",
-            "npm:storybook",
-            "npm:ts-node",
-            "npm:typescript",
-            "npm:vite"
-          ]
-        },
-        {
-          "file": "pnpm-lock.yaml",
-          "hash": "4482483051895484579"
-        },
-        {
-          "file": "pnpm-workspace.yaml",
-          "hash": "629357993458335914"
-        },
-        {
-          "file": "tsconfig.base.json",
-          "hash": "16936441711144470533"
         }
       ]
     }
