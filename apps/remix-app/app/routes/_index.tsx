@@ -1,6 +1,5 @@
 import type { MetaFunction } from '@remix-run/node';
 import { useState } from 'react';
-// @ts-expect-error - no types for shared-utils
 import { isEven } from 'shared-utils';
 
 export const meta: MetaFunction = () => {

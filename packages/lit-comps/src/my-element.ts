@@ -9,8 +9,8 @@ import viteLogo from '/vite.svg';
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement('my-element')
-export class MyElement extends LitElement {
+@customElement('lit-button')
+export class LitButton extends LitElement {
   /**
    * Copy for the read the docs hint.
    */
@@ -45,6 +45,7 @@ export class MyElement extends LitElement {
 
   private _onClick() {
     this.count++;
+    console.log('clicked', this.count);
   }
 
   static styles = css`
@@ -122,6 +123,6 @@ export class MyElement extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement;
+    'lit-button': LitButton;
   }
 }

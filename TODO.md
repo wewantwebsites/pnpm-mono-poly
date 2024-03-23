@@ -10,6 +10,6 @@
 
 ## Lit
 
-- [ ] make components
+- [ ] make components; like a button or form-group
 - [ ] consume web components
 - [ ] storybook

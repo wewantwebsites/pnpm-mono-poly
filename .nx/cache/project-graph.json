@@ -16653,6 +16653,11 @@
       },
       {
         "source": "remix-app",
+        "target": "sf-components",
+        "type": "static"
+      },
+      {
+        "source": "remix-app",
         "target": "npm:@remix-run/dev",
         "type": "static"
       },
@@ -16762,6 +16767,11 @@
     "sk-app": [
       {
         "source": "sk-app",
+        "target": "sf-components",
+        "type": "static"
+      },
+      {
+        "source": "sk-app",
         "target": "shared-utils",
         "type": "static"
       },
@@ -16802,6 +16812,21 @@
       },
       {
         "source": "sk-app",
+        "target": "npm:autoprefixer",
+        "type": "static"
+      },
+      {
+        "source": "sk-app",
+        "target": "npm:daisyui",
+        "type": "static"
+      },
+      {
+        "source": "sk-app",
+        "target": "npm:daisyui",
+        "type": "dynamic"
+      },
+      {
+        "source": "sk-app",
         "target": "npm:eslint",
         "type": "static"
       },
@@ -16813,6 +16838,11 @@
       {
         "source": "sk-app",
         "target": "npm:eslint-plugin-svelte",
+        "type": "static"
+      },
+      {
+        "source": "sk-app",
+        "target": "npm:postcss",
         "type": "static"
       },
       {
@@ -16833,6 +16863,11 @@
       {
         "source": "sk-app",
         "target": "npm:svelte-check",
+        "type": "static"
+      },
+      {
+        "source": "sk-app",
+        "target": "npm:tailwindcss",
         "type": "static"
       },
       {
