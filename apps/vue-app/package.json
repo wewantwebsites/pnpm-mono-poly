@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "sf-components": "workspace:^",
     "shared-utils": "workspace:^",
     "vue": "^3.4.19"
   },
