@@ -1,12 +1,15 @@
-<script>
+<script lang="ts">
 	import Label from './Label.svelte';
 
-	export let value = '';
-	export let label = '';
-	export let type = 'text';
-	export let name = '';
+	let {
+		value,
+		disabled = false,
+		label = '',
+		name = crypto.randomUUID() as string,
+		required = false
+	} = $props();
 </script>
 
-<Label forId={name} {label}>
-	<input bind:value {type} {name} id={name} />
+<Label forId={name} {label} {required}>
+	<input id={name} bind:value type="text" {name} {required} {disabled} />
 </Label>

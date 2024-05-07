@@ -1,18 +1,12 @@
-<script>
-	export let label = '';
-	export let isRequired = false;
-	export let forId = '';
-
-	$: hasDefaultSlot = $$slots.default !== undefined;
+<script lang="ts">
+	let { label, required, forId = '' } = $props();
 </script>
 
 <label for={forId} class="label">
-	{label}}"
-	{#if isRequired}
+	{label}
+	{#if required}
 		<sup class="text-red-500">*</sup>
 	{/if}
 
-	{#if hasDefaultSlot}
-		<slot />
-	{/if}
+	<slot />
 </label>

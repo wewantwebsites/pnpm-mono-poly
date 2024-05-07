@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/svelte": "^5.2.0",
     "astro": "^4.5.9",
+    "kit-comps": "workspace:^",
     "sf-svelte": "workspace:^",
     "svelte": "^4.2.12",
     "typescript": "^5.4.3"

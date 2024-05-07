@@ -13491,6 +13491,11 @@
       },
       {
         "source": "all-together-now",
+        "target": "kit-comps",
+        "type": "static"
+      },
+      {
+        "source": "all-together-now",
         "target": "sf-svelte",
         "type": "static"
       },
