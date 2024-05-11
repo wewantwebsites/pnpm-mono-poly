@@ -1,8 +1,13 @@
-# Svelte + TS + Vite
+# Super Freak Components (sf)
+
+This package is some core and prebuilt components that can be used cross-framework. That is you can use
+these components in React, Vue, and even a MVC razor/laravel application. Making and consuming custom-elements has never been so easy!
+
+## Svelte + TS + Vite
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
 
-## Recommended IDE Setup
+### Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
 
@@ -42,6 +47,6 @@ If you have state that's important to retain within a component, consider creati
 ```ts
 // store.ts
 // An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+import { writable } from 'svelte/store';
+export default writable(0);
 ```
