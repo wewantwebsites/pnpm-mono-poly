@@ -1,10 +1,19 @@
-<svelte:options customElement="sf-counter" />
+<svelte:options
+  customElement={{
+    tag: 'sf-counter',
+    shadow: 'none',
+  }}
+/>
 
 <script lang="ts">
-  let count: number = 0;
-  const increment = () => {
-    count += 1;
-  };
+  export let start: number = 0;
+  export let step: number = 1;
+
+  let stepBy = parseInt(step.toString()) || 1;
+  let count = parseInt(start.toString()) || 0;
+  function increment() {
+    count += stepBy;
+  }
 </script>
 
 <button on:click={increment}>
